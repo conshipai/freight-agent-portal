@@ -1,7 +1,7 @@
 // src/components/quotes/QuoteResults.jsx
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Check, Plane, Ship, Package, DollarSign, Clock } from 'lucide-react';
+import { ArrowLeft, Check, Plane, Ship, Package, Clock } from 'lucide-react';
 
 const QuoteResults = () => {
   const location = useLocation();
