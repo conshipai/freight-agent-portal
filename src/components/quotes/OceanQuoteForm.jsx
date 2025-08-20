@@ -252,4 +252,4 @@ const OceanQuoteForm = () => {
   );
 };
 
-export { QuoteResults as default, OceanQuoteForm };
+export default OceanQuoteForm;
