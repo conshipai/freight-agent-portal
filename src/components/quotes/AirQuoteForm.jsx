@@ -1,7 +1,7 @@
 // src/components/quotes/AirQuoteForm.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Plane, Package, MapPin, Globe, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Plane, MapPin, Globe } from 'lucide-react';
 import IncotermSelector from '../common/IncotermSelector';
 import CargoDetails from '../common/CargoDetails';
 
