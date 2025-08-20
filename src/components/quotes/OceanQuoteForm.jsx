@@ -5,15 +5,14 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Ship, Anchor, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Ship, Anchor } from 'lucide-react';
 import IncotermSelector from '../common/IncotermSelector';
 import CargoDetails from '../common/CargoDetails';
 
 const OceanQuoteForm = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
-  
+
   const [formData, setFormData] = useState({
     origin: {
       port: '',
