@@ -11,14 +11,13 @@ import ProjectQuoteForm from './components/quotes/ProjectQuoteForm';
 import QuoteResults from './components/quotes/QuoteResults';
 
 function App() {
-  const [parentOrigin, setParentOrigin] = useState('*');
 
   useEffect(() => {
     // Listen for messages from parent window (your main app)
     const handleMessage = (event) => {
       // Verify origin if needed
-      if (event.data.type === 'INIT_AGENT_PORTAL') {
-        setParentOrigin(event.origin);
+      //if (event.data.type === 'INIT_AGENT_PORTAL') {
+       // setParentOrigin(event.origin);
         
         // Send acknowledgment back to parent
         event.source.postMessage({
