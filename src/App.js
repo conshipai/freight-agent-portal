@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
@@ -11,14 +11,11 @@ import ProjectQuoteForm from './components/quotes/ProjectQuoteForm';
 import QuoteResults from './components/quotes/QuoteResults';
 
 function App() {
-
   useEffect(() => {
     // Listen for messages from parent window (your main app)
     const handleMessage = (event) => {
       // Verify origin if needed
-      //if (event.data.type === 'INIT_AGENT_PORTAL') {
-       // setParentOrigin(event.origin);
-        
+      if (event.data.type === 'INIT_AGENT_PORTAL') {
         // Send acknowledgment back to parent
         event.source.postMessage({
           type: 'AGENT_PORTAL_READY',
